@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <title>Budget App</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="align-content-center">Budget Calculator</h1>
+        <div class="budget__numbers">
+
+            <div class="card-group" style="margin-left: 5rem;">
+                <div class="card">
+                  <img src="https://cdn-icons-png.flaticon.com/512/5303/5303805.png" class="card-img-top" alt="..." height="150px">
+                  <div class="card-body">
+                    <h5 class="card-title">Money Earned</h5>
+                    <p class="card-text">
+
+                        <div class="amount__container pt-4">
+                        <p id="earned__symbol">₹</p>
+                        <span id="amount__earned"></span>
+                        </div>
+
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="https://thumbs.dreamstime.com/b/businessman-make-money-easy-use-your-work-65173723.jpg" class="card-img-top" alt="..." height="150px">
+                  <div class="card-body">
+                    <h5 class="card-title">Money Available</h5>
+                    <p class="card-text">
+
+                        <div class="amount__container ">
+                        <p>₹</p>
+                        <span id="amount__available"></span>
+                        </div>
+                        
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="https://media.istockphoto.com/id/1448427663/vector/hand-arm-holding-money-cash-business-currency-banknote-design-element-vector-illustration.jpg?s=612x612&w=0&k=20&c=wCpofkT2vVlDgjYWXtPsCVn1dy_qSi2Zurw4_NiFF84=" class="card-img-top" alt="..." height="150px">
+                  <div class="card-body">
+                    <h5 class="card-title">Money Spend</h5>
+                    <p class="card-text">
+                        
+                        <div class="amount__container pt-4">
+                        <p id="spent__symbol">₹</p>
+                        <span id="amount__spent"></span>
+                    </div>
+
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+        </div>
+
+
+
+        <div class="card w-75 mb-3 ">
+            <div class="card-body p-5">
+            <div class="input__area d-flex justify-content-center mb-3">
+            <input type="text" id="description" placeholder="Description" class="me-3"  style="background-color: rgba(0, 0, 0, 0.212);">
+            <input type="number" id="amount"  placeholder="Amount" style="background-color: rgba(0, 0, 0, 0.151); width: 20rem;">
+        </div>
+        <div class="buttons__area d-flex justify-content-center mt-5">
+            <button id="add__income" class="me-3">Add Income</button>
+            <button id="add__expense">Add Expense</button>
+        </div>
+            </div>
+          </div>
+
+
+      
+        <div class="items__container">
+            <div id="income__container" class="container">
+                <h2>Income</h2>
+
+            </div>
+            <div id="expenses__container" class="container">
+                <h2>Expenses</h2>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
